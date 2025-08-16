@@ -1,97 +1,73 @@
-# MazeGrid: Interactive Maze Generator and Pathfinding Visualizer
+# Maze Pathfinder Visualizer
 
-This project is an interactive maze generator and pathfinding algorithm visualizer built with React. It allows users to generate random mazes and visualize two popular pathfinding algorithms: Breadth-First Search (BFS) and Depth-First Search (DFS).
+This project is an interactive maze generator and pathfinding algorithm visualizer built using React and Vite. It allows users to generate random mazes using a recursive backtracking algorithm and visualize the process of finding a path from a start point to an end point using Breadth-First Search (BFS) and Depth-First Search (DFS) algorithms.
 
 ## Features
 
-- Random maze generation
-- Interactive visualization of maze generation
-- Breadth-First Search (BFS) pathfinding algorithm
-- Depth-First Search (DFS) pathfinding algorithm
-- Real-time visualization of pathfinding algorithms
-- Responsive design for various screen sizes
+- **Random Maze Generation**: Creates complex mazes using the Recursive Backtracking algorithm.
+- **Pathfinding Algorithms**: Implements and visualizes:
+  - **Breadth-First Search (BFS)**: Finds the shortest path in an unweighted grid.
+  - **Depth-First Search (DFS)**: Explores paths deeply before backtracking.
+- **Step-by-Step Visualization**: Clearly shows how the algorithms explore the maze cells.
+- **Interactive Controls**: Buttons to generate a new maze and run pathfinding algorithms.
+- **Responsive Design**: Adapts to different screen sizes using CSS variables.
+- **Loading Indicator**: Provides feedback while the maze is generating.
+- **Status Messages**: Displays messages like "Path found!".
+
+## Tech Stack
+
+- **Frontend Library**: React 18
+- **Build Tool**: Vite
+- **Language**: JavaScript (JSX), CSS
+- **Development Environment**: Node.js, npm
+- **(TypeScript Ready)**: The project includes `tsconfig.json` and Vite configuration for TypeScript, though the core components are currently implemented in JavaScript (`.jsx`).
 
 ## Demo
 
-[Add a link to your live demo here, if available]
+[Live](https://algomaze.netlify.app/)
 
-## Getting Started
+*Screenshot:*
+[Screenshot](https://iamkartikey.vercel.app/project-screenshots/maze-pathfinder-visualizer.png)
 
-These instructions will help you set up the project on your local machine for development and testing purposes.
+
+## Setup and Installation
+
+Follow these steps to set up the project locally:
 
 ### Prerequisites
 
-- Node.js (version 12 or later)
-- npm (usually comes with Node.js)
+- Node.js (v18 or later recommended)
+- npm (usually included with Node.js)
 
 ### Installation
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/your-username/mazegrid-react.git
-   ```
+1.  **Clone the repository:**
 
-2. Navigate to the project directory:
-   ```
-   cd mazegrid-react
-   ```
+    ```bash
+    git clone <your-repository-url>
+    cd pathfinder_visualizer_kartikey
+    ```
 
-3. Install the dependencies:
-   ```
-   npm install
-   ```
+2.  **Install dependencies:**
 
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+    ```bash
+    npm install
+    ```
 
-5. Open your browser and visit `http://localhost:3000` to see the application running.
+3.  **Start the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+    This command starts the Vite development server, typically on `http://localhost:5173`.
+
+4.  **Open in browser:**
+    Navigate to the URL provided in the terminal (e.g., `http://localhost:5173`) to view the application.
 
 ## Usage
 
-- Click the "Refresh Maze" button to generate a new random maze.
-- Click "Breadth-First Search" to visualize the BFS algorithm.
-- Click "Depth-First Search" to visualize the DFS algorithm.
-- Watch as the algorithms explore the maze and find the path from start to end.
-
-## Implementation Details
-
-The project uses React for the user interface and implements the following key features:
-
-1. Maze Generation: Uses a recursive backtracking algorithm to create random mazes.
-2. Breadth-First Search (BFS): Implements BFS for pathfinding, guaranteeing the shortest path.
-3. Depth-First Search (DFS): Implements DFS for pathfinding, which may not find the shortest path but is memory-efficient.
-4. Visualization: Uses React state and timeouts to create step-by-step visualizations of the algorithms.
-
-## Running React on Repl.it
-
-This project is set up to run on Repl.it, which provides a quick and easy way to get started with React development.
-
-- React is a popular JavaScript library for building user interfaces.
-- Vite is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
-- Using the two in conjunction is one of the fastest ways to build a web app.
-
-### Getting Started on Repl.it
-
-1. Hit the "Run" button
-2. Edit `App.jsx` and watch it live update!
-
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the `.replit` configuration file. Here are the [Vite docs for serving production websites](https://vitejs.dev/guide/build.html).
-
-### TypeScript Support
-
-To use TypeScript, just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Template](https://replit.com/@replit/React-TypeScript).
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgments
-
-- Thanks to the React team for creating an amazing library
-- Inspiration from various maze generation and pathfinding visualization projects
+1.  **Generate Maze**: Upon loading, a random maze is generated. Click the "Refresh Maze" button to create a new one.
+2.  **Run BFS**: Click the "Breadth-First Search" button to visualize the BFS algorithm exploring the maze from the start (top-left green cell) to the end (bottom-right red cell). Visited cells are marked in light green.
+3.  **Run DFS**: Click the "Depth-First Search" button to visualize the DFS algorithm exploring the maze.
+4.  **Observe**: Watch the visualization progress. A message "Path found!" will appear if the end cell is reached.
