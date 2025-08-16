@@ -27,7 +27,7 @@ This project is an interactive maze generator and pathfinding algorithm visualiz
 [Live](https://algomaze.netlify.app/)
 
 *Screenshot:*
-[Screenshot](https://iamkartikey.vercel.app/project-screenshots/maze-pathfinder-visualizer.png)
+![Screenshot](https://iamkartikey.vercel.app/project-screenshots/maze-pathfinder-visualizer.png)
 
 
 ## Setup and Installation
